@@ -24,7 +24,7 @@ function Navbar() {
     <>
       <div>
         <div className="navbar  text-white sticky top-0 z-[20] mx-auto  ">
-          <div className="navbar-start">
+          <div className="navbar-start flex max-lg:flex-1 max-lg:w-[100%] max-lg:justify-start">
             <div className="dropdown">
               <div
                 tabIndex={0}
@@ -53,21 +53,12 @@ function Navbar() {
                 {navItems}
               </ul>
             </div>
-            <a className="text-2xl font-bold cursor-pointer ml-20">Vishwa Shivanand Appaji</a>
+            <a className="text-2xl font-bold cursor-pointer ml-20 ">Vishwa Shivanand Appaji</a>
           </div>
           <div className="navbar-center hidden lg:flex">
             <ul className="menu menu-horizontal px-10 text-xl">{navItems}</ul>
           </div>
-          {/* <div className="navbar-end">
-            <button className="btn btn-xs sm:btn-sm md:btn-md lg:btn-md hover:bg-slate-900 hover:text-white mr-3">
-              Login as Doctor
-            </button>
-            <button className="btn btn-xs sm:btn-sm md:btn-md lg:btn-md hover:bg-slate-900 hover:text-white">
-              Login as Patient
-            </button>
-          </div> */}
-          {/* <a href="/signIn-d" className="SpBtn p-1 m-4 text-white"> Sign In as Doctor</a>
-          <a href="/signIn-p" className="SpBtn p-1 m-4 text-white"> Sign In as Patient</a> */}
+          
         </div>
       </div>
     </>

@@ -12,7 +12,7 @@ function Body2() {
   return (
     <>
     <section id="skills">
-      <div className="max-w-screen-2xl container mx-auto md:px-20 px-4 flex flex-col md:flex-row custom-background fixed-height2">
+      <div className="max-w-screen-2xl container mx-auto md:px-20 px-4 flex flex-col-reverse md:flex-row custom-background ">
         <div className="w-full order-1 md:w-1/2" data-aos="fade-right">
           <img src="images/skills.png" className="w-5/6 h-5/6 mt-5 m-15 " alt="#" />{" "}
         </div>

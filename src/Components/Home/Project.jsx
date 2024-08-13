@@ -12,14 +12,14 @@ function Project() {
     <>
       <section id="projects">
       <div className="max-w-screen-2xl container mx-auto md:px-20 px-4 md:flex-row">
-        <h1 className=" teamHead text-7xl mb-4" data-aos="fade-up">
+        <h1 className=" teamHead text-5xl max-md:text-3xl max-sm:text-2xl mb-4" data-aos="fade-up">
           Projects
         </h1>
         <div className="grid grid-cols-1 md:grid-cols-3 " data-aos="fade-up">
           <div className="mt-4 m-3 " >
             <div className="card w-92 p-5 hover:scale-105 duration-200 dark:border  ">
-              <figure class="w-4/6 m-auto">
-                <img src="images/zipkart-logo.png" alt="img" class="w-full h-auto"/>
+              <figure className="w-4/6 m-auto">
+                <img src="images/zipkart-logo.png" alt="img" className="w-full h-auto"/>
               </figure>
               <div className="card-body">
                 <h2 className="card-title text-2xl">Zipkart</h2>

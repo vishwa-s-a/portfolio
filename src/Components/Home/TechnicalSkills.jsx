@@ -4,12 +4,12 @@ const TechnicalSkills = () => {
   const [activeTab, setActiveTab] = useState('frontend');
 
   return (
-    <div className="container mx-auto p-4 bg-gray-900 text-white">
+    <div className="container mx-auto p-4 flex flex-1 flex-col bg-gray-900 text-white">
       <div className="mb-4">
-        <h1 className="text-5xl font-bold">Technical Skills</h1>
+        <h1 className="text-5xl max-lg:text-3xl max-md:text-2xl max-sm:text-xl font-bold">Technical Skills</h1>
       </div>
-      <div>
-        <div className="flex border-b border-gray-700 mb-4">
+      <div className='flex flex-wrap'>
+        <div className="flex flex-wrap border-b border-gray-700 mb-4">
           <button
             className={`tab-button py-2 px-4 ${activeTab === 'frontend' ? 'text-gray-300 border-b-2 border-blue-500' : 'text-gray-500'}`}
             onClick={() => setActiveTab('frontend')}
@@ -45,18 +45,18 @@ const TechnicalSkills = () => {
             </div>
             <div>
               <h2 className="font-semibold">FRAMEWORKS</h2>
-              <div className="flex space-x-2">
-                <span className="bg-gray-700 text-gray-300 py-1 px-2 rounded">ReactJs</span>
-                <span className="bg-gray-700 text-gray-300 py-1 px-2 rounded">Bootstrap</span>
-                <span className="bg-gray-700 text-gray-300 py-1 px-2 rounded">Tailwind CSS</span>
+              <div className="flex flex-wrap space-x-2">
+                <span className="bg-gray-700 text-gray-300 mt-1 py-1 px-2 rounded">ReactJs</span>
+                <span className="bg-gray-700 text-gray-300 mt-1 py-1 px-2 rounded">Bootstrap</span>
+                <span className="bg-gray-700 text-gray-300 mt-1 py-1 px-2 rounded">Tailwind CSS</span>
               </div>
             </div>
             <div>
               <h2 className="font-semibold">MARKUP / STYLING</h2>
-              <div className="flex space-x-2">
-                <span className="bg-gray-700 text-gray-300 py-1 px-2 rounded">HTML</span>
-                <span className="bg-gray-700 text-gray-300 py-1 px-2 rounded">CSS</span>
-                <span className="bg-gray-700 text-gray-300 py-1 px-2 rounded">Markdown</span>
+              <div className="flex flex-wrap space-x-2">
+                <span className="bg-gray-700 text-gray-300 mt-1 py-1 px-2 rounded">HTML</span>
+                <span className="bg-gray-700 text-gray-300 mt-1 py-1 px-2 rounded">CSS</span>
+                <span className="bg-gray-700 text-gray-300 mt-1 py-1 px-2 rounded">Markdown</span>
                 
               </div>
             </div>
@@ -72,10 +72,10 @@ const TechnicalSkills = () => {
           <div className="space-y-4">
             <div>
               <h2 className="font-semibold">LANGUAGES</h2>
-              <div className="flex space-x-2">
-                <span className="bg-gray-700 text-gray-300 py-1 px-2 rounded">Node.js</span>
-                <span className="bg-gray-700 text-gray-300 py-1 px-2 rounded">Python</span>
-                <span className="bg-gray-700 text-gray-300 py-1 px-2 rounded">PHP</span>
+              <div className="flex flex-wrap space-x-2">
+                <span className="bg-gray-700 text-gray-300 mt-1 py-1 px-2 rounded">Node.js</span>
+                <span className="bg-gray-700 text-gray-300 mt-1 py-1 px-2 rounded">Python</span>
+                <span className="bg-gray-700 text-gray-300 mt-1 py-1 px-2 rounded">PHP</span>
               </div>
             </div>
             <div>
@@ -105,18 +105,18 @@ const TechnicalSkills = () => {
           <div className="space-y-4">
             <div>
               <h2 className="font-semibold">FRAMEWORKS</h2>
-              <div className="flex space-x-2">
+              <div className="flex  flex-wrap space-x-2">
                 <span className="bg-gray-700 text-gray-300 py-1 px-2 rounded">TensorFlow</span>
                 <span className="bg-gray-700 text-gray-300 py-1 px-2 rounded">Keras</span>
               </div>
             </div>
             <div>
               <h2 className="font-semibold">LIBRARIES</h2>
-              <div className="flex space-x-2">
-                <span className="bg-gray-700 text-gray-300 py-1 px-2 rounded">NumPy</span>
-                <span className="bg-gray-700 text-gray-300 py-1 px-2 rounded">Pandas</span>
-                <span className="bg-gray-700 text-gray-300 py-1 px-2 rounded">matplotlib</span>
-                <span className="bg-gray-700 text-gray-300 py-1 px-2 rounded">scikit-learn</span>
+              <div className="flex space-x-2  flex-wrap">
+                <span className="bg-gray-700 text-gray-300 mt-1 py-1 px-2 rounded">NumPy</span>
+                <span className="bg-gray-700 text-gray-300 mt-1 py-1 px-2 rounded">Pandas</span>
+                <span className="bg-gray-700 text-gray-300 mt-1 py-1 px-2 rounded">matplotlib</span>
+                <span className="bg-gray-700 text-gray-300 mt-1 py-1 px-2 rounded">scikit-learn</span>
               </div>
             </div>
           </div>
@@ -125,11 +125,11 @@ const TechnicalSkills = () => {
           <div className="space-y-4">
             <div>
               <h2 className="font-semibold">LANGUAGES</h2>
-              <div className="flex space-x-2">
-                <span className="bg-gray-700 text-gray-300 py-1 px-2 rounded">Java</span>
-                <span className="bg-gray-700 text-gray-300 py-1 px-2 rounded">C</span>
-                <span className="bg-gray-700 text-gray-300 py-1 px-2 rounded">C++</span>
-                <span className="bg-gray-700 text-gray-300 py-1 px-2 rounded">Latex</span>
+              <div className="flex flex-wrap space-x-2">
+                <span className="bg-gray-700 text-gray-300 mt-1 py-1 px-2 rounded">Java</span>
+                <span className="bg-gray-700 text-gray-300 mt-1 py-1 px-2 rounded">C</span>
+                <span className="bg-gray-700 text-gray-300 mt-1 py-1 px-2 rounded">C++</span>
+                <span className="bg-gray-700 text-gray-300 mt-1 py-1 px-2 rounded">Latex</span>
               </div>
             </div>
             <div>
@@ -141,11 +141,11 @@ const TechnicalSkills = () => {
             </div>
             <div>
               <h2 className="font-semibold">CYBERSECURITY TOOLS</h2>
-              <div className="flex space-x-2">
-                <span className="bg-gray-700 text-gray-300 py-1 px-2 rounded">NMAP</span>
-                <span className="bg-gray-700 text-gray-300 py-1 px-2 rounded">WireShark</span>
-                <span className="bg-gray-700 text-gray-300 py-1 px-2 rounded">BeEF</span>
-                <span className="bg-gray-700 text-gray-300 py-1 px-2 rounded">Aircrack-ng</span>
+              <div className="flex flex-wrap space-x-2">
+                <span className="bg-gray-700 text-gray-300 mt-1 py-1 px-2 rounded">NMAP</span>
+                <span className="bg-gray-700 text-gray-300 mt-1 py-1 px-2 rounded">WireShark</span>
+                <span className="bg-gray-700 text-gray-300 mt-1 py-1 px-2 rounded">BeEF</span>
+                <span className="bg-gray-700 text-gray-300 mt-1 py-1 px-2 rounded">Aircrack-ng</span>
               </div>
             </div>
           </div>
